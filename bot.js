@@ -72,10 +72,10 @@ client.on("message", (message) => {
         }
 
         if (message.content.includes("r/woosh")){
-            message.channel.send("r/WOW r/kid r/you r/just r/got r/WOOOOOOSHED!!!! 😂😂👀" +
-            "r/Wooosh r/means r/you r/didnt r/get r/the r/joke, r/as r/in r/the r/sound r/made r/when r/the r/joke r/woooshes r/over r/your r/head." +
-                "r/I r/bet r/youre r/too r/stupid r/to r/get r/it r/IDIOT!! 😤😤😂"+
-                "r/My r/joke r/was r/so r/thoughtfully r/crafted r/and r/took r/me r/a r/total r/of r/3 r/minutes, r/you r/SHOULD r/be r/laughing. 🤬"
+            message.channel.send("r/WOW r/kid r/you r/just r/got r/WOOOOOOSHED!!!! 😂😂👀"
+            +"r/Wooosh r/means r/you r/didnt r/get r/the r/joke, r/as r/in r/the r/sound r/made r/when r/the r/joke r/woooshes r/over r/your r/head."
+            + "r/I r/bet r/youre r/too r/stupid r/to r/get r/it r/IDIOT!! 😤😤😂"
+            +  "r/My r/joke r/was r/so r/thoughtfully r/crafted r/and r/took r/me r/a r/total r/of r/3 r/minutes, r/you r/SHOULD r/be r/laughing. 🤬"
             +"r/Whats r/that? r/My r/joke r/is r/bad? r/I r/think r/thats r/just r/because r/you r/failed. r/I r/outsmarted r/you.🤭"
             +"r/In r/conclusion, r/I r/am r/posting r/this r/to r/the r/community r/known r/as r/Wooooosh r/to r/claim r/my r/internet r/points r/in r/your r/embarrassment 😏."
             +"r/Imbecile. r/The r/Germans r/refer r/to r/this r/action r/as r/Schadenfreude, r/which r/means r/harmjoy 😬😲."
