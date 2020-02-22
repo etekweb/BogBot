@@ -37,13 +37,8 @@ client.on("message", (message) => {
                 message.channel.send(bog[getRandomInt(0, bog.length)])
             }
 
-            if (message.content.includes("homeless")) {
-                const house = new Discord.Attachment('https://i.imgur.com/DkoestG.png');
 
-                message.channel.send(house);
-                message.channel.send("JUST GET A HOUSE");
-            }
-            if (message.content.includes("boomer")) {
+            if (message.content.toLowerCase.includes("boomer")) {
                 const boomer = new Discord.Attachment('https://i.imgur.com/5PjuJjh.png');
 
                 message.channel.send(boomer);
@@ -56,14 +51,14 @@ client.on("message", (message) => {
         }
 
 
-        if (message.content.includes("homeless")) {
+        if (message.content.toLowerCase.includes("homeless")) {
             const house = new Discord.Attachment('https://i.imgur.com/DkoestG.png');
 
             message.channel.send(house);
             message.channel.send("JUST GET A HOUSE")
         }
 
-        if (message.content.includes("peace")) {
+        if (message.content.toLowerCase.includes("peace")) {
             const goose_knife = new Discord.Attachment('https://i.imgur.com/sf0o3zI.png');
 
             message.channel.send(goose_knife);
@@ -71,7 +66,7 @@ client.on("message", (message) => {
 
         }
 
-        if (message.content.includes("take a seat")) {
+        if (message.content.toLowerCase.includes("take a seat")) {
             const hansen = new Discord.Attachment("https://i.imgur.com/kfbcXYS.png");
             message.channel.send(hansen);
         }
