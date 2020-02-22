@@ -72,7 +72,7 @@ client.on("message", (message) => {
         }
 
         if (message.content.includes("take a seat")) {
-            const hansen = new Discord.Attachment("https://i.imgur.com/ckxuJr2.png");
+            const hansen = new Discord.Attachment("https://i.imgur.com/kfbcXYS.png");
             message.channel.send(hansen);
         }
 
