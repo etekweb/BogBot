@@ -36,7 +36,7 @@ client.on("message", (message) => {
         message.channel.send("\"Wear a hat that covers your ears\"- Bonnie");
     }
     if (message.content.includes("take a seat")){
-        const hansen = new Discord.Attachment("https://i.imgur.com/ckxuJr2.png%22");
+        const hansen = new Discord.Attachment("https://i.imgur.com/ckxuJr2.png");
 
         message.channel.send(hansen);}
 
