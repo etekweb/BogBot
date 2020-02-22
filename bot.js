@@ -13,7 +13,17 @@ client.on("message", (message) => {
     if (message.content.startsWith(",help")) {
         message.channel.send("Commands: ping, BOG, homeless");
     }
-});
 
+    if (message.content.includes("BOG")){
+        message.channel.send("COME BACK FORSAN :MEGALUL:");
+    }
+
+    if(message.content.includes("homeless")){
+        const house = new Discord.Attachment('https://i.imgur.com/DkoestG.png');
+
+        message.channel.send(house);
+        message.channel.send("JUST GET A HOUSE")
+    }
+});
 
 client.login(token);
