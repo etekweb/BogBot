@@ -18,7 +18,9 @@ client.on("message", (message) => {
     }
 
     if (message.content.includes("BOG")) {
-        message.channel.send("COME BACK FORSAN :MEGALUL:");
+        let bog = ['COME BACK FORSAN <:MEGALUL:680613639996178483>', '<:MEGALUL:680613639996178483>  ᛏᚺᛖ ᛋᛟᚢᛚᛋ ᛟᚠ ᛏᚺᛖ ᛁᚾᚾᛟᚲᛖᚾᛏ ᛋᚺᚨᛚᛚ ᛒᚢᚱᚾ', '<:MEGALUL:680613639996178483> ☢ THE RADIATION MAKES ME STRONGER']
+
+        message.channel.send(bog[getRandomInt(0, bog.length)]);
     }
 
     if (message.content.includes("homeless")) {
@@ -50,5 +52,5 @@ function getRandomInt(min, max){
     min = Math.floor(min);
     max = Math.ceil(max);
 
-    return Math.floor(Math.random() * (max - min)); //The maximum is exclusive and the minimum is exclusive
+    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
