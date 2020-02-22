@@ -7,6 +7,7 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
+    if (message.author.bot) return;
     if (message.channel.id === '680606214282936350') {
         if (message.content.startsWith("ping")) {
             message.channel.send("pong!");
@@ -26,10 +27,10 @@ client.on("message", (message) => {
             message.channel.send("JUST GET A HOUSE");
         }
         if (message.content.includes("boomer")) {
-                    const boomer = new Discord.Attachment('https://i.imgur.com/5PjuJjh.png');
+            const boomer = new Discord.Attachment('https://i.imgur.com/5PjuJjh.png');
 
-                    message.channel.send(boomer);
-                }
+            message.channel.send(boomer);
+        }
     }
 
     if (message.content.toLowerCase().startsWith("it's cold")) {
