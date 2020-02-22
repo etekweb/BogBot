@@ -66,7 +66,7 @@ client.on("message", (message) => {
 
         }
 
-        if (message.content.toLowerCase.includes("take a seat")) {
+        if (message.content.toLowerCase().includes("take a seat")) {
             const hansen = new Discord.Attachment("https://i.imgur.com/kfbcXYS.png");
             message.channel.send(hansen);
         }
