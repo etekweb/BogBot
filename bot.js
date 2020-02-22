@@ -12,7 +12,7 @@ client.on("message", (message) => {
             message.channel.send("pong!");
         }
         if (message.content.startsWith(",help")) {
-            message.channel.send("Commands: ping, BOG, homeless, it's cold");
+            message.channel.send("Commands: ping, BOG, homeless, it's cold, boomer");
         }
 
         if (message.content.includes("BOG")) {
@@ -23,8 +23,13 @@ client.on("message", (message) => {
             const house = new Discord.Attachment('https://i.imgur.com/DkoestG.png');
 
             message.channel.send(house);
-            message.channel.send("JUST GET A HOUSE")
+            message.channel.send("JUST GET A HOUSE");
         }
+        if (message.content.includes("boomer")) {
+                    const boomer = new Discord.Attachment('https://i.imgur.com/5PjuJjh.png');
+
+                    message.channel.send(boomer);
+                }
     }
 
     if (message.content.toLowerCase().startsWith("it's cold")) {
