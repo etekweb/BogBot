@@ -11,8 +11,15 @@ client.on("message", (message) => {
         message.channel.send("pong!");
     }
 
-    if (message.content.startsWith("BOG")){
+    if (message.content.includes("BOG")){
         message.channel.send("COME BACK FORSAN :MEGALUL:");
+    }
+
+    if(message.content.includes("homeless")){
+        const house = new Discord.Attachment('https://i.imgur.com/DkoestG.png');
+
+        message.channel.send(house);
+        message.channel.send("JUST GET A HOUSE")
     }
 });
 
