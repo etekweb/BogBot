@@ -10,6 +10,10 @@ client.on("message", (message) => {
     if (message.content.startsWith("ping")) {
         message.channel.send("pong!");
     }
+
+    if (message.content.startsWith("BOG")){
+        message.channel.send("COME BACK FORSAN :MEGALUL:");
+    }
 });
 
 client.login(token);
