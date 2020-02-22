@@ -37,12 +37,7 @@ client.on("message", (message) => {
                 message.channel.send(bog[getRandomInt(0, bog.length)])
             }
 
-            if (message.content.includes("homeless")) {
-                const house = new Discord.Attachment('https://i.imgur.com/DkoestG.png');
-
-                message.channel.send(house);
-                message.channel.send("JUST GET A HOUSE");
-            }
+          
             if (message.content.includes("boomer")) {
                 const boomer = new Discord.Attachment('https://i.imgur.com/5PjuJjh.png');
 
