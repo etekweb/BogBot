@@ -36,6 +36,11 @@ client.on("message", (message) => {
     if (message.content.toLowerCase().startsWith("it's cold")) {
         message.channel.send("\"Wear a hat that covers your ears\"- Bonnie");
     }
+    if (message.content.includes("take a seat")){
+        const hansen = new Discord.Attachment("https://i.imgur.com/ckxuJr2.png");
+
+        message.channel.send(hansen);}
+
 });
 
 client.login(token);
