@@ -11,7 +11,7 @@ client.on("message", (message) => {
         message.channel.send("pong!");
     }
     if (message.content.startsWith(",help")) {
-        message.channel.send("Commands: ping, BOG");
+        message.channel.send("Commands: ping, BOG, homeless");
     }
 });
 
