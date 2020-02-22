@@ -7,7 +7,7 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
-    if (msg.channel.id === '680606214282936350') {
+    if (message.channel.id === '680606214282936350') {
         if (message.content.startsWith("ping")) {
             message.channel.send("pong!");
         }
