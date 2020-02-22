@@ -38,7 +38,7 @@ client.on("message", (message) => {
             }
 
 
-            if (message.content.toLowerCase.includes("boomer")) {
+            if (message.content.toLowerCase().includes("boomer")) {
                 const boomer = new Discord.Attachment('https://i.imgur.com/5PjuJjh.png');
 
                 message.channel.send(boomer);
@@ -51,14 +51,14 @@ client.on("message", (message) => {
         }
 
 
-        if (message.content.toLowerCase.includes("homeless")) {
+        if (message.content.toLowerCase().includes("homeless")) {
             const house = new Discord.Attachment('https://i.imgur.com/DkoestG.png');
 
             message.channel.send(house);
             message.channel.send("JUST GET A HOUSE")
         }
 
-        if (message.content.toLowerCase.includes("peace")) {
+        if (message.content.toLowerCase().includes("peace")) {
             const goose_knife = new Discord.Attachment('https://i.imgur.com/sf0o3zI.png');
 
             message.channel.send(goose_knife);
@@ -72,11 +72,11 @@ client.on("message", (message) => {
         }
 
         if (message.content.includes("r/woosh")){
-            message.channel.send("r/WOW r/kid r/you r/just r/got r/WOOOOOOSHED!!!! 😂😂👀"
+            message.channel.send("r/WOW r/kid r/you r/just r/got r/WOOOOOOSHED!!!! 😂😂👀\n\n"
             +"r/Wooosh r/means r/you r/didnt r/get r/the r/joke, r/as r/in r/the r/sound r/made r/when r/the r/joke r/woooshes r/over r/your r/head."
-            + "r/I r/bet r/youre r/too r/stupid r/to r/get r/it r/IDIOT!! 😤😤😂"
+            + "r/I r/bet r/youre r/too r/stupid r/to r/get r/it r/IDIOT!! 😤😤😂\n\n"
             +  "r/My r/joke r/was r/so r/thoughtfully r/crafted r/and r/took r/me r/a r/total r/of r/3 r/minutes, r/you r/SHOULD r/be r/laughing. 🤬"
-            +"r/Whats r/that? r/My r/joke r/is r/bad? r/I r/think r/thats r/just r/because r/you r/failed. r/I r/outsmarted r/you.🤭"
+            +"r/Whats r/that? r/My r/joke r/is r/bad? r/I r/think r/thats r/just r/because r/you r/failed. r/I r/outsmarted r/you.🤭\n\n"
             +"r/In r/conclusion, r/I r/am r/posting r/this r/to r/the r/community r/known r/as r/Wooooosh r/to r/claim r/my r/internet r/points r/in r/your r/embarrassment 😏."
             +"r/Imbecile. r/The r/Germans r/refer r/to r/this r/action r/as r/Schadenfreude, r/which r/means r/harmjoy 😬😲."
             +"r/WOW! 🤪 r/Another r/reference r/I r/had r/to r/explain r/to r/you. 🤦‍♂️🤭"
