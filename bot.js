@@ -12,7 +12,7 @@ client.on("message", (message) => {
             message.channel.send("pong!");
         }
         if (message.content.startsWith(",help")) {
-            message.channel.send("Commands: ping, BOG, homeless, it's cold, boomer");
+            message.channel.send("Commands: ping, it's cold");
         }
 
         if (message.content.includes("BOG")) {
