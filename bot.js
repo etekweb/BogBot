@@ -26,6 +26,10 @@ client.on("message", (message) => {
             message.channel.send("JUST GET A HOUSE")
         }
     }
+
+    if (message.content.toLowerCase().startsWith("it's cold")) {
+        message.channel.send("\"Wear a hat that covers your ears\"- Bonnie");
+    }
 });
 
 client.login(token);
