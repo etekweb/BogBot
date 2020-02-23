@@ -14,40 +14,10 @@ client.on("message", (message) => {
             message.channel.send("pong!");
         }
 
-        if (message.content.startsWith(",help")) {
-            message.channel.send("Commands: ping");
-        }
-
-
         if (message.author.bot) return;
-        if (message.channel.id === '680606214282936350') {
-            if (message.content.startsWith("ping")) {
-                message.channel.send("pong!");
-            }
-            if (message.content.startsWith(",help")) {
-                message.channel.send("Commands: ping, it's cold");
-            }
 
-
-            if (message.content.toLowerCase().includes("bog")) {
-                let bog = ['COME BACK FORSAN <:MEGALUL:680613639996178483>',
-                    '<:MEGALUL:680613639996178483>  ᛏᚺᛖ ᛋᛟᚢᛚᛋ ᛟᚠ ᛏᚺᛖ ᛁᚾᚾᛟᚲᛖᚾᛏ ᛋᚺᚨᛚᛚ ᛒᚢᚱᚾ',
-                    '<:MEGALUL:680613639996178483> ☢ THE RADIATION MAKES ME STRONGER']
-
-                message.channel.send(bog[getRandomInt(0, bog.length)])
-            }
-
-
-            if (message.content.toLowerCase().includes("boomer")) {
-                const boomer = new Discord.Attachment('https://i.imgur.com/5PjuJjh.png');
-
-                message.channel.send(boomer);
-            }
-        }
-
-        if (message.content.toLowerCase().startsWith("it's cold")) {
-            message.channel.send("\"Wear a hat that covers your ears\"- Bonnie");
-
+        if (message.content.startsWith(",help")) {
+            message.channel.send("Commands: ping, it's cold");
         }
 
 
@@ -83,7 +53,31 @@ client.on("message", (message) => {
             +"r/I r/am r/going r/to r/cease r/this r/conversation r/for r/I r/do r/not r/converse r/with r/simple r/minded r/persons.😏😂");
         }
 
-    }
+        if (message.content.toLowerCase().includes("bog")) {
+          let bog = ['COME BACK FORSAN <:MEGALUL:680613639996178483>',
+              '<:MEGALUL:680613639996178483>  ᛏᚺᛖ ᛋᛟᚢᛚᛋ ᛟᚠ ᛏᚺᛖ ᛁᚾᚾᛟᚲᛖᚾᛏ ᛋᚺᚨᛚᛚ ᛒᚢᚱᚾ',
+             '<:MEGALUL:680613639996178483> ☢ THE RADIATION MAKES ME STRONGER']
+
+             message.channel.send(bog[getRandomInt(0, bog.length)])
+        }
+
+
+        if (message.content.toLowerCase().includes("boomer")) {
+            const boomer = new Discord.Attachment('https://i.imgur.com/5PjuJjh.png');
+
+            message.channel.send(boomer);
+        }
+
+
+        if (message.content.toLowerCase().startsWith("it's cold")) {
+            message.channel.send("\"Wear a hat that covers your ears\"- Bonnie");
+
+        }
+
+
+
+
+}
 );
 
 client.login(token);
